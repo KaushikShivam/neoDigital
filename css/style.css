@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #fff; }
+
+.heading-primary {
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1; }
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+  margin-bottom: 2rem; }
+
+.heading-tertiary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem; }
+  .heading-tertiary--left {
+    text-align: left; }
+
+.heading-tertiary-2 {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  margin-top: -1rem; }
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 3rem; }
+  .paragraph--left {
+    text-align: left; }
+  .paragraph span {
+    font-weight: 600; }
+
+.row--padding {
+  max-width: 114rem;
+  margin: 0 auto; }
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.row [class^='col-'] {
+  float: left; }
+
+.row .col-1-of-2 {
+  width: calc(100% / 2); }
+
+.row .col-1-of-3 {
+  width: calc(100% / 3); }
+
+.row .col-1-of-4 {
+  width: calc(100% / 4); }
+
+.row .col-1-of-5 {
+  width: calc(100% / 5); }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(211, 63, 99, 0.2), rgba(0, 0, 0, 0.1)), url(../../img/hero-bg.png);
+  position: relative; }
+  .header__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__pagn {
+    margin-bottom: 4rem; }
+    .header__pagn ul {
+      text-align: center; }
+      .header__pagn ul li {
+        margin: 1rem;
+        display: inline-block;
+        width: 4rem;
+        height: 0.8rem;
+        background-color: #fff;
+        opacity: 0.4; }
+        .header__pagn ul li:first-child {
+          opacity: 1; }
+  .header__arrow {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    width: 2.1rem;
+    height: auto;
+    transform: translateX(-50%); }

@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom,
+      rgba($color-tertiary, 0.2),
+      rgba($color-black, 0.1)),
+    url(../../img/hero-bg.png);
+  position: relative;
+
+  &__content {
+    @include absCenter;
+    text-align: center;
+  }
+
+  &__pagn {
+    margin-bottom: 4rem;
+
+    ul {
+      text-align: center;
+
+      li {
+        margin: 1rem;
+        display: inline-block;
+        width: 4rem;
+        height: 0.8rem;
+        background-color: $color-white;
+        opacity: 0.4;
+
+        &:first-child {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    width: 2.1rem;
+    height: auto;
+    transform: translateX(-50%);
+  }
+}
