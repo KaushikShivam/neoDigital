@@ -141,3 +141,35 @@ body {
     .nav__item:last-child:hover, .nav__item:last-child:active {
       background: linear-gradient(to right top, #a234d5, #d74059);
       border: 3px solid transparent; }
+
+.section-services {
+  background: linear-gradient(to right top, #a234d5, #d74059);
+  padding: 14rem 20rem; }
+  .section-services__content {
+    text-align: center; }
+
+.section-clients {
+  text-align: center;
+  background-color: #fff; }
+  .section-clients__img {
+    height: 4.5rem;
+    margin: 5% 2%; }
+
+.section-team {
+  margin-bottom: 0rem; }
+
+.section-social {
+  background-color: #1a0e24;
+  text-align: center;
+  padding: 8rem 0; }
+  .section-social__img-box {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr); }
+  .section-social__img {
+    width: 100%;
+    display: block; }
+  .section-social__links a {
+    margin: 0 1rem; }
+  .section-social__heading {
+    margin-top: 2rem; }
