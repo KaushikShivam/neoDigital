@@ -124,6 +124,15 @@ body {
   .team-box:hover::after {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
 
+.visit-box {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(to left top, #1a0e24, #2e2236);
+  padding: 12rem 10rem;
+  text-align: center; }
+  .visit-box:not(:last-child) {
+    background: linear-gradient(to right top, #1a0e24, #2e2236);
+    border-right: 1px solid rgba(255, 255, 255, 0.4); }
+
 .row--padding {
   max-width: 114rem;
   margin: 0 auto; }
