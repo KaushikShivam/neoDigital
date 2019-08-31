@@ -133,6 +133,22 @@ body {
     background: linear-gradient(to right top, #1a0e24, #2e2236);
     border-right: 1px solid rgba(255, 255, 255, 0.4); }
 
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 9rem 0;
+  text-align: center;
+  background: #000; }
+  .footer__list {
+    list-style: none;
+    font-size: 2rem; }
+  .footer__item {
+    display: inline-block;
+    padding: 0 2rem; }
+  .footer p {
+    font-size: 1.6rem;
+    margin-top: 4rem;
+    font-weight: 200; }
+
 .row--padding {
   max-width: 114rem;
   margin: 0 auto; }

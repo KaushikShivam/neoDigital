@@ -1,0 +1,22 @@
+.footer {
+  border-top: 1px solid rgba($color-white, 0.5);
+  padding: 9rem 0;
+  text-align: center;
+  background: $color-black;
+
+  &__list {
+    list-style: none;
+    font-size: 2rem;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-top: 4rem;
+    font-weight: 200;
+  }
+}
