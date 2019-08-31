@@ -108,3 +108,36 @@ body {
     width: 2.1rem;
     height: auto;
     transform: translateX(-50%); }
+
+.nav {
+  margin: 0 15%;
+  padding-top: 4.6rem; }
+  .nav__logo {
+    float: left;
+    padding-top: 1rem; }
+  .nav__list {
+    float: right;
+    list-style: none; }
+  .nav__item {
+    display: inline-block; }
+    .nav__item:not(:last-child) {
+      padding-right: 4rem; }
+    .nav__item:last-child {
+      border: 3px solid #d74059;
+      padding: 1rem; }
+    .nav__item a:link,
+    .nav__item a:visited {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s; }
+    .nav__item:not(:last-child) a:hover,
+    .nav__item:not(:last-child) a:active {
+      border-bottom: 3px solid #d74059;
+      padding-bottom: 1rem; }
+    .nav__item:last-child {
+      transition: all 0.2s; }
+    .nav__item:last-child:hover, .nav__item:last-child:active {
+      background: linear-gradient(to right top, #a234d5, #d74059);
+      border: 3px solid transparent; }
