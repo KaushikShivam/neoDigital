@@ -24,6 +24,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 75em) {
+    html {
+      font-size: 57%; } }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
 
 body {
   box-sizing: border-box; }
@@ -149,6 +158,9 @@ body {
   .visit-box:not(:last-child) {
     background: linear-gradient(to right top, #1a0e24, #2e2236);
     border-right: 1px solid rgba(255, 255, 255, 0.4); }
+  @media screen and (max-width: 56.25em) {
+    .visit-box {
+      padding: 10rem 5rem; } }
 
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -177,6 +189,9 @@ body {
 
 .row [class^='col-'] {
   float: left; }
+  @media screen and (max-width: 37.5em) {
+    .row [class^='col-'] {
+      width: 100% !important; } }
 
 .row .col-1-of-2 {
   width: calc(100% / 2); }
@@ -231,6 +246,9 @@ body {
   .nav__list {
     float: right;
     list-style: none; }
+    @media screen and (max-width: 650px) {
+      .nav__list {
+        display: none; } }
   .nav__item {
     display: inline-block; }
     .nav__item:not(:last-child) {
@@ -260,6 +278,12 @@ body {
   padding: 14rem 20rem; }
   .section-services__content {
     text-align: center; }
+  @media screen and (max-width: 75em) {
+    .section-services {
+      padding: 14rem 8rem; } }
+  @media screen and (max-width: 56.25em) {
+    .section-services {
+      padding: 10rem 4rem; } }
 
 .section-clients {
   text-align: center;

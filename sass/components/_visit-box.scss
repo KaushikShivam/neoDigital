@@ -11,4 +11,8 @@
 
   padding: 12rem 10rem;
   text-align: center;
+
+  @include respond(tab-port) {
+    padding: 10rem 5rem;
+  }
 }

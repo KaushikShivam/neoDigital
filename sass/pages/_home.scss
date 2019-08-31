@@ -5,6 +5,14 @@
   &__content {
     text-align: center;
   }
+
+  @include respond(tab-land) {
+    padding: 14rem 8rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 4rem;
+  }
 }
 
 .section-clients {

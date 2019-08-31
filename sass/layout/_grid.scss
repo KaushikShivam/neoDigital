@@ -8,6 +8,10 @@
 
   [class^='col-'] {
     float: left;
+
+    @include respond(phone) {
+      width: 100% !important;
+    }
   }
 
   .col-1-of-2 {
