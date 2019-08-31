@@ -71,6 +71,24 @@ body {
     transform: scale(1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
 
+.service-box__item {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .service-box__item a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff; }
+
+.service-box__img-box {
+  margin: 8rem 4rem 0 4rem; }
+  .service-box__img-box img {
+    display: block;
+    width: 90%;
+    height: auto; }
+
 .row--padding {
   max-width: 114rem;
   margin: 0 auto; }
