@@ -11,7 +11,8 @@ body {
   word-spacing: 1rem;
   margin-bottom: 2rem;
   line-height: 1;
-
+  animation-name: moveInLeft;
+  animation-duration: 1s;
 }
 
 .heading-secondary {
@@ -51,5 +52,9 @@ body {
 
   span {
     font-weight: 600;
+  }
+
+  &--animate {
+    animation: moveInRight 1s ease-out;
   }
 }

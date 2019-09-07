@@ -15,6 +15,34 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::before,
 *::after {
@@ -48,7 +76,9 @@ body {
   letter-spacing: 0.3rem;
   word-spacing: 1rem;
   margin-bottom: 2rem;
-  line-height: 1; }
+  line-height: 1;
+  animation-name: moveInLeft;
+  animation-duration: 1s; }
 
 .heading-secondary {
   font-size: 4rem;
@@ -78,6 +108,8 @@ body {
     text-align: left; }
   .paragraph span {
     font-weight: 600; }
+  .paragraph--animate {
+    animation: moveInRight 1s ease-out; }
 
 .btn {
   color: #fff;
@@ -96,6 +128,9 @@ body {
   .btn--full:active {
     transform: scale(1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+  .btn--animate {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards; }
 
 .service-box__item {
   list-style: none;
