@@ -1,0 +1,26 @@
+.btn {
+  color: $color-white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: inline-block;
+
+  &--full,
+  &--full:link,
+  &--full:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 5px;
+    background: linear-gradient(to right, $color-primary, $color-secondary);
+    transition: all 0.2s;
+  }
+
+  &--full:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  &--full:active {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+}

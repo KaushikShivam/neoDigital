@@ -1,0 +1,55 @@
+.section-services {
+  background: linear-gradient(to right top, $color-primary, $color-secondary);
+  padding: 14rem 20rem;
+
+  &__content {
+    text-align: center;
+  }
+
+  @include respond(tab-land) {
+    padding: 14rem 8rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 4rem;
+  }
+}
+
+.section-clients {
+  text-align: center;
+  background-color: $color-white;
+
+  &__img {
+    height: 4.5rem;
+    margin: 5% 2%;
+  }
+}
+
+.section-team {
+  margin-bottom: 0rem;
+}
+
+.section-social {
+  background-color: #1a0e24;
+  text-align: center;
+  padding: 8rem 0;
+
+  &__img-box {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__links a {
+    margin: 0 1rem;
+  }
+
+  &__heading {
+    margin-top: 2rem;
+  }
+}

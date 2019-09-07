@@ -1,0 +1,61 @@
+.nav {
+  margin: 0 15%;
+  padding-top: 4.6rem;
+
+  &__logo {
+    float: left;
+    padding-top: 1rem;
+  }
+
+  &__list {
+    float: right;
+    list-style: none;
+
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      padding-right: 4rem;
+    }
+
+    &:last-child {
+      border: 3px solid $color-secondary;
+      padding: 1rem;
+    }
+
+    a:link,
+    a:visited {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: $color-white;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    &:not(:last-child) {
+
+      a:hover,
+      a:active {
+        border-bottom: 3px solid $color-secondary;
+        padding-bottom: 1rem;
+      }
+    }
+
+    &:last-child {
+      transition: all 0.2s;
+    }
+
+    &:last-child:hover,
+    &:last-child:active {
+      background: linear-gradient(to right top,
+          $color-primary,
+          $color-secondary);
+      border: 3px solid transparent;
+    }
+  }
+}
