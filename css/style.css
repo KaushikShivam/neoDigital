@@ -101,12 +101,17 @@ body {
   list-style: none;
   display: inline-block;
   padding: 1rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  padding-bottom: 2.5rem; }
   .service-box__item a {
     text-decoration: none;
     font-size: 2rem;
-    color: #fff; }
+    color: #fff;
+    width: 100%;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all .3s; }
+  .service-box__item a:hover {
+    border-bottom: 2px solid white; }
 
 .service-box__img-box {
   margin: 8rem 4rem 0 4rem; }
