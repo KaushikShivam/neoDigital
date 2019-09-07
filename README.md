@@ -41,7 +41,7 @@ A [build script](#scripts) is created to accomodate older browser compatibility
 
 1. Clone the project to your local directory
 ```
-git clone https://github.com/KaushikShivam/neoDigital
+git clone https://github.com/KaushikShivam/odigo
 ```
 
 2. The project uses NPM for managing dependencies. Run npm install to install all the required dependencies
@@ -79,26 +79,21 @@ Run ```npm start``` to run the script
 
 1. Compile sass files
 ```
-"compile:sass": "node-sass sass/main.scss css/style.comp.css"
+"compile:sass": "node-sass sass/main.scss css/style.comp.css",
 ```
 
-2. Concat all the css files including font styles etc
+2. Add prefixes automatically to the modern CSS rules (supports last 10 years - Can be configured)
 ```
-"concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
-```
-
-3. Add prefixes automatically to the modern CSS rules (supports last 10 years - Can be configured)
-```
-"prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css"
+"postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css"
 ```
 
-4. Adds compression
+3. Adds compression
 ```
 "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed"
 ```
-5. Final Build process
+4. Final Build process
 ```
-"build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+"build:css": "npm-run-all compile:sass prefix:css compress:css"
 ```
 
 Run ```npm run build:css``` to run the build script
