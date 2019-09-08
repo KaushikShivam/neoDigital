@@ -1,6 +1,6 @@
 # NeoDigital - Creative Digital Agency
 
-[NoewDigital](https://rawcdn.githack.com/KaushikShivam/marketika/c7a35424e5bc25d245d6cfbf2cd72942a442e800/index.html) | A very professional and highly customizable template with lots of custom pages and useful features fora Creative Marketing Agency
+[NowDigital](https://rawcdn.githack.com/KaushikShivam/marketika/c7a35424e5bc25d245d6cfbf2cd72942a442e800/index.html) | A very professional and highly customizable template with lots of custom pages and useful features fora Creative Marketing Agency
 
 ![NeoDigital Screenshot](screenshot.png)
 
